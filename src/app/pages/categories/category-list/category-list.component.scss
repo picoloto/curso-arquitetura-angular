@@ -1,0 +1,29 @@
+.title-container {
+  margin-top: 1rem;
+  justify-content: center;
+  flex: content;
+  vertical-align: middle;
+  align-items: start;
+}
+
+.title-container h1 {
+  margin: 0 !important;
+}
+
+table {
+  width: 100%;
+}
+
+.mat-mdc-form-field {
+  flex-grow: 1;
+  padding-right: 1rem;
+}
+
+.mat-column-actions {
+  width: 130px;
+  text-align: center;
+}
+
+tr.mat-mdc-row:hover {
+  background: #efefef !important;
+}

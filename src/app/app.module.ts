@@ -1,10 +1,10 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { AngularMaterialModule } from './shared/angular-material/angular-material.module';
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
+import { ComponentsModule } from "./shared/modules/components/components/components.module";
 
 @NgModule({
   declarations: [AppComponent],
@@ -12,7 +12,7 @@ import { AngularMaterialModule } from './shared/angular-material/angular-materia
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    AngularMaterialModule,
+    ComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

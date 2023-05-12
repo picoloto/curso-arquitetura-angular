@@ -1,0 +1,18 @@
+<mat-card>
+  <div class="breadcrumb">
+    <div *ngFor="let item of items; last as isLast">
+      <a
+        mat-button
+        class="item"
+        [routerLink]="['/']"
+        *ngIf="!isLast"
+        color="primary">
+        {{ item.description }}
+      </a>
+      <span class="breadcrumb-divider" *ngIf="!isLast">/</span>
+      <a mat-button class="item breadcrumb-item-no-click" *ngIf="isLast">{{
+        item.description
+      }}</a>
+    </div>
+  </div>
+</mat-card>
