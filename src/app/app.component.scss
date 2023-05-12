@@ -1,0 +1,12 @@
+@use "@angular/material" as mat;
+
+$primaryPalette: mat.define-palette(mat.$deep-purple-palette);
+$secondaryPalette: mat.define-palette(mat.$amber-palette);
+
+.router-content {
+  margin: 16px;
+}
+
+.active-menu {
+  background: mat.get-color-from-palette($primaryPalette, 400);
+}

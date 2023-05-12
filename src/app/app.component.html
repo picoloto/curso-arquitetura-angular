@@ -1,1 +1,34 @@
-<router-outlet></router-outlet>
+<mat-toolbar color="primary" class="flex-row">
+  <a mat-button class="item" routerLink="/">
+    <mat-icon>leaderboard</mat-icon>
+    <b>FANAN$YS</b></a
+  >
+
+  <a
+    mat-button
+    class="item"
+    routerLink="/reports"
+    routerLinkActive="active-menu">
+    Relatórios
+  </a>
+
+  <a
+    mat-button
+    class="item"
+    routerLink="/entries'"
+    routerLinkActive="active-menu">
+    Lançamentos
+  </a>
+
+  <a
+    mat-button
+    class="item"
+    routerLink="/categories"
+    routerLinkActive="active-menu">
+    Categorias
+  </a>
+</mat-toolbar>
+
+<div class="router-content">
+  <router-outlet></router-outlet>
+</div>
